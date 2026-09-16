@@ -5,11 +5,27 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
   <title>TimeGate 업데이트</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; background:#07111f; color:#eef6ff; }
+    body { min-height:100vh; margin:0; display:grid; place-items:center; }
+    main { width:min(520px,calc(100% - 40px)); padding:32px; border:1px solid #26415f; border-radius:20px; background:#0d1c2e; }
+    h1 { margin:0 0 8px; font-size:30px; } p { color:#b8c9dc; line-height:1.6; }
+    a { display:block; margin-top:24px; padding:15px 18px; border-radius:12px; background:#1677ff; color:white; text-align:center; text-decoration:none; font-weight:700; }
+    small { display:block; margin-top:18px; color:#7f96ad; }
+  </style>
 </head>
 <body>
   <main>
     <h1>TimeGate</h1>
-    <p>공식 Android 업데이트 페이지를 준비하고 있습니다.</p>
+    <p id="status">최신 안정판을 확인하고 있습니다.</p>
+    <a id="download" href="#" hidden>최신 APK 다운로드</a>
+    <small>Android가 설치 확인을 요청할 수 있습니다. 기존 앱 위에 그대로 설치하세요.</small>
   </main>
+  <script>
+    fetch('./stable.json', {cache:'no-store'}).then(r => { if (!r.ok) throw new Error(); return r.json(); }).then(v => {
+      document.querySelector('#status').textContent = `최신 안정판 v${v.versionName}`;
+      const a = document.querySelector('#download'); a.href = v.apkUrl; a.hidden = false;
+    }).catch(() => { document.querySelector('#status').textContent = '업데이트 정보를 잠시 불러오지 못했습니다.'; });
+  </script>
 </body>
 </html>
