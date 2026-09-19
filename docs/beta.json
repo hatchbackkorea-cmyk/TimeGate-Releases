@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "versionName": "0.34.183",
-  "tagName": "v0.34.183",
-  "title": "TimeGate v0.34.183",
-  "notes": "TimeGate v0.34.183 업데이트입니다.",
-  "apkUrl": "https://github.com/hatchbackkorea-cmyk/TimeGate-Releases/releases/download/v0.34.183/GPXBatteryCopilot-v0.34.183-release.apk",
-  "apkName": "GPXBatteryCopilot-v0.34.183-release.apk",
-  "sha256": "0c2a407c2cc07e1976480f089d53b9ba2f4778dafd39235a86463ad741191519",
-  "sha256Url": "https://github.com/hatchbackkorea-cmyk/TimeGate-Releases/releases/download/v0.34.183/GPXBatteryCopilot-v0.34.183-release.apk.sha256",
+  "versionName": "0.34.184",
+  "tagName": "v0.34.184",
+  "title": "TimeGate v0.34.184",
+  "notes": "TimeGate v0.34.184 업데이트입니다.",
+  "apkUrl": "https://github.com/hatchbackkorea-cmyk/TimeGate-Releases/releases/download/v0.34.184/GPXBatteryCopilot-v0.34.184-release.apk",
+  "apkName": "GPXBatteryCopilot-v0.34.184-release.apk",
+  "sha256": "db3a43455e6d5b3c11fd4ad4239d0c8af09eab80ccf4c93bae53e5d8e4bd07ce",
+  "sha256Url": "https://github.com/hatchbackkorea-cmyk/TimeGate-Releases/releases/download/v0.34.184/GPXBatteryCopilot-v0.34.184-release.apk.sha256",
   "prerelease": false,
-  "publishedAt": "2026-09-18T14:16:34Z"
+  "publishedAt": "2026-09-19T04:27:50Z"
 }
